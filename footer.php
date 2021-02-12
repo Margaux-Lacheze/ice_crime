@@ -9,9 +9,9 @@ require 'head.html';
         </a>
     </div>
     <div class="footer-newsletter">
-        <form action="POST" action="/newsletter.php" class="footer-form">
+        <form action="/newsletter.php" method="post" class="footer-form">
             <label for="newsletter-footer" class="label footer-label">Newsletter :</label>
-            <input type="email" placeholder="Votre email" class="form-control-footer" id="footer-input">
+            <input name="email" type="email" placeholder="Votre email" class="form-control-footer" id="footer-input">
             <button type="submit" id="footer-button">S'inscrire</button>
         </form>
     </div>
