@@ -4,7 +4,7 @@ require 'head.html';
 <footer class="footer">
     <div class="footer-newsletter">
         <form action="/newsletter.php" method="post" class="footer-form">
-            <label for="newsletter-footer" class="label footer-label">Newsletter :</label>
+            <label for="newsletter-footer" class="footer-label">Newsletter :</label>
             <input name="email" type="email" placeholder="Votre email" class="form-control-footer" id="footer-input">
             <button type="submit" id="footer-button">S'inscrire</button>
         </form>

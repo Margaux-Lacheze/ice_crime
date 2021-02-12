@@ -246,23 +246,21 @@ Produits*/
     padding-left: 5px;
 }
 
-.footer-newsletter {
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
 .footer-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
 #footer-input{
     font-size: 0.6rem;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 0.3rem;
-    border-color: rgba(0,0,0, 0.18);
+    border: none;
+    padding-bottom: 0;
+}
+
+.footer-form > label {
+    margin-left: 20px;
 }
 
 #footer-button {
@@ -905,15 +903,47 @@ MEDIA QUERY
 }
 
 @media only screen and (min-width: 700px){
-    .socials{
-        max-width: 40vw;
-    }
-
-    .others{
-        width: 90vw;
+    .footer{
+        width: 100vw;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-form {
+        display: flexbox;
+        flex-direction: row;
+        align-items: center;
+        width: 50wv;
+    }
+
+    .footer-label{
+        min-width: 120px;
+    }
+
+    #footer-button {
+        margin-left: 10px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+    
+    .socials{
+        max-width: 20vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .socials > a > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .others{
+        width: 15vw;
     }
 
     .form {
