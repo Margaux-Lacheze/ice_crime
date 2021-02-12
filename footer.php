@@ -2,12 +2,6 @@
 require 'head.html';
 ?>
 <footer class="footer">
-    <div class="container-footer">
-        <a class="top" href="#navlist">
-            <img src="img/arrow.svg" alt="Flèche haut de page" width="21px" height="21px">
-            <p>Haut de page</p>
-        </a>
-    </div>
     <div class="footer-newsletter">
         <form action="/newsletter.php" method="post" class="footer-form">
             <label for="newsletter-footer" class="label footer-label">Newsletter :</label>
