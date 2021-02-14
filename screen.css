@@ -593,7 +593,7 @@ PANIER
 }
 
 #newsletter-title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     padding-left: 20px;
     color: rgb(185, 60, 145);
     line-height: 1;
@@ -648,7 +648,7 @@ PANIER
 }
 
 #whatsup-title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: rgb(61, 176, 149);
     margin-top: 1rem;
     padding-bottom: 0;
@@ -665,8 +665,9 @@ PANIER
 
 .whatsup-subtitle {
     color: rgb(243, 214, 53);
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
+    padding-left: 3px;
 }
 
 .whatsup-date {
