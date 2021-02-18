@@ -8,6 +8,16 @@
 
 }
 
+:root {
+    --pink: rgb(185, 60, 145);
+    --green: rgb(61, 176, 149);
+    --yellow: rgb(243, 214, 53);
+    --big-margin: 70px;
+    --little-margin: 35px;
+    --title-font-size: 1rem;
+    --text-font-size: 0.7rem;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -69,7 +79,7 @@ Home */
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: rgba(185, 60, 145, 1);
+    color: var(--pink);
     font-size: 1.2rem;
     padding: 0.3rem;
 }
@@ -599,18 +609,7 @@ PANIER
 }
 
 .form-newsletter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 50vw;
-    height: 5rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+    margin-left: 70px;
 }
 
 .form-control {
@@ -687,6 +686,10 @@ PANIER
 
 .whatsup-text-container{
     width: 60vw;
+}
+
+.whatsup-p{
+    padding : 0;
 }
 
 

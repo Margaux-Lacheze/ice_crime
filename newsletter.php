@@ -1,5 +1,5 @@
 <?php 
-require 'head.html';
+require 'head.php';
 $error = null;
 $success = null;
 $email = null;

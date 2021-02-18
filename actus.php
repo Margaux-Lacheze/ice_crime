@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 $title = "Actualités";
 
 require_once 'header.php';

@@ -1,5 +1,5 @@
 <?php 
-require 'head.html';
+require 'head.php';
 ?>
 <footer class="footer">
     <div class="footer-newsletter">

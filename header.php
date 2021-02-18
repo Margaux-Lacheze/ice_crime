@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 ?>
 <body>
     <header class="header">

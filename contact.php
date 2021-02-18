@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 $title = 'Nous contacter';
 require_once 'data/horaires.php';
 require_once 'functions.php';

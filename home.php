@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Ice Crime</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="screen.css">
-</head>
-<body>
-    <header class="header-home">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <a href="home.php" class="nav-items">Home</a>
-                <a href="diy.php" class="nav-items">DIY</a>
-                <a href="actus.php" class="nav-items">Actus</a>
-                <a href="contact.php" class="nav-items">Contact</a>
-            </ul>
-        </nav>
-        <div class="baseline">
-            <h1>Ice Crime</h1>
-            <span>Rafraîchisseur de papilles</span>
-        </div>
-    </header>
+<?php
+    require 'head.php';
+    require 'header.php';
+    $title = "Home";
 
+?>
+<body>
 
     <section class="container truck-section" id="truck">
         <div class="truck-img">

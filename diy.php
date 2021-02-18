@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 require_once 'functions.php';
 $title = "Do It Yourself";
 
