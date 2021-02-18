@@ -9,6 +9,7 @@ require 'head.php';
             <a href="diy.php" class="nav-items">DIY</a>
             <a href="actus.php" class="nav-items">Actus</a>
             <a href="contact.php" class="nav-items">Contact</a>
+            <a href="#" class="nav-items"><img src="/img/account.svg" alt="Mon compte"></a>
             <a href="panier.php" class="nav-items"><img src="/img/basket.svg" alt="panier" width="40px" height="40px"></a>
         </ul>
         </nav>
