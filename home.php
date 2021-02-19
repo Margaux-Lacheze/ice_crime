@@ -1,11 +1,8 @@
 <?php
-    require 'head.php';
-    require 'header.php';
-    $title = "Home";
-
+require 'head.php';
+require 'header.php';
+$title = "Home";
 ?>
-<body>
-
     <section class="container truck-section" id="truck">
         <div class="truck-img">
             <img src="img/pexels-elisa-guarneros-1550049 (1).jpg" alt="photo camion">
