@@ -1,5 +1,6 @@
 <?php
 require 'head.php';
+require 'header.php';
 $title = "Votre panier";
 
 $prixParfums = [
@@ -116,26 +117,23 @@ $totalContenants = $prixContenants[$contenant];
 $total = $totalParfums + $totalSupplements + $totalContenants;
 
 $ingredients = [$array_parfums, $array_supplements, $contenant_policed];
-
-
-require_once 'header.php'
 ?>
 
 <div class="shopping-card-container">
     <div class="shopping-card-list">
     <?php if(!empty($ingredients[0])): ?>
-        <h2>Votre glace</h2>
+        <h2 class="shopping-title">Votre glace :</h2>
         <ul>
             <li id="perfumes-list">
                 <h4 class="list-subtitle"><?php if(sizeof($array_parfums) > 1): ?>Vos parfums <?php else: ?>Votre parfum<?php endif;?></h4>
                 <ul class="list-item">
                     <li>
                         <?php foreach($array_parfums as $k => $parfum): ?>
-                            <?php if(sizeof($array_parfums) > 1): ?><em>Boule n°<?= $k + 1 ?> : </em>
+                            <?php if(sizeof($array_parfums) > 1): ?><em class="list-item-em">Boule n°<?= $k + 1 ?> : </em>
                             <?php else: ?> 
                             <?php endif;?>
                         <ul>
-                            <li><?= $parfum ?></li>
+                            <li class="shopping-li"><?= $parfum ?></li>
                         </ul>
                         <?php endforeach; ?>
                     </li>
@@ -146,15 +144,16 @@ require_once 'header.php'
                 <h4 class="list-subtitle"><?php if(sizeof($array_supplements) >1):?>Vos suppléments<?php else: ?>Votre supplément<?php endif; ?></h4>
                 <?php foreach($array_supplements as $supplement): ?>
                 <ul class="list-item">
-                    <li><?= $supplement ?></li>
+                    <li class="shopping-li"><?= $supplement ?></li>
                 </ul>
                 <?php endforeach; ?>
+                <?php endif; ?>
             </li>
             <li id="contenants-list">
                 <?php if(!empty($contenant_policed)): ?>
-                <h4> class="list-subtitle">Votre contenant</h4>
+                <h4 class="list-subtitle">Votre contenant</h4>
                 <ul class="list-item">
-                    <li><?= $contenant_policed ?></li>
+                    <li class="shopping-li"><?= $contenant_policed ?></li>
                 </ul>
                 <?php endif; ?>
             </li>
@@ -164,8 +163,8 @@ require_once 'header.php'
 
     <div class="shopping-card-total">
         <?php if(isset($total) && $total > 0): ?>
-        <strong>Total : <?= $total ?>€</strong>
-        <button>Paiement</button>
+        <strong class="shopping-total">Total : <?= $total ?>€</strong>
+        <button class="shopping-button">Paiement</button>
         <?php else: ?>
             <div class="alert">
                 <p>Votre panier est vide</p>

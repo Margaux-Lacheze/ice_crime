@@ -552,24 +552,48 @@ PANIER
 */
 
 .shopping-card-container {
-    padding: 10px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.shopping-card-list {
+    margin-bottom: 35px;
 }
 
 .shopping-title {
-    font-family: 'bakeryregular', serif;
-    color: rgb(243, 214, 53);
-    font-size: 2.2rem;
-    text-align: center;
+    font-family: var(--title-font-family);
+    font-size: var(--big-title-font-size);
+    color: var(--pink);
+    margin-top: 40px;
 }
 
-.list-container {
-    padding: 0.5rem;
-    border: solid 2px rgb(185, 60, 145);
-    border-radius: 20px;
+.list-subtitle {
+    font-size: var(--text-font-size);
+    color: var(--green);
+    margin-top: 15px;
 }
+
+.list-item-em {
+    color: var(--green);
+    font-size: var(--text-font-size);
+}
+
+.shopping-li {
+    font-size: var(--text-font-size);
+}
+
+.shopping-total {
+    color: var(--pink);
+    margin-right: 20px;
+}
+
+.shopping-button {
+    max-width: 200px;
+}
+
 
 /*ACTUS ---------------------------------------*/
 
