@@ -3,7 +3,7 @@ require 'head.php';
 ?>
 <header class="header">
     <nav class="navbar">
-        <ul class="nav-list" id="navlist">
+        <ul class="nav-list">
             <div class="nav-a">
                 <a href="home.php" class="nav-items nav-underline">Home</a>
                 <a href="diy.php" class="nav-items nav-underline">DIY</a>
