@@ -14,7 +14,8 @@
     --yellow: rgb(243, 214, 53);
     --big-margin: 70px;
     --little-margin: 35px;
-    --title-font-size: 1rem;
+    --big-title-font-size: 2.5rem;
+    --title-font-size: 1.5rem;
     --text-font-size: 0.7rem;
     --title-font-family: 'bakeryregular';
     --text-font-family: 'Quicksand';
@@ -222,14 +223,14 @@ Home */
 
 .truck-img > img {
     max-height: 85vh;
-    border: solid 2px rgba(185, 60, 145, 1);
+    border: solid 2px var(--pink);
     box-shadow: 0 0 30px rgba(128, 128, 128, .5);
 }
 
 .home-title {
-    font-family: 'bakeryregular', serif;
-    font-size: 2.5rem;
-    color: rgba(185, 60, 145, 1);
+    font-family: var(--title-font-family);
+    font-size: var(--big-title-font-size);
+    color: var(--pink);
     padding: 0.5rem 0 0.5rem 0;
 }
 
@@ -248,61 +249,60 @@ Home */
 Produits*/
 
 #produits {
-    color: rgb(61, 176, 149);
+    color: var(--green);
     text-align: center;
+}
+
+.products-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .products-group {
-    padding: 0.3rem 0.5rem;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.products-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 75vw;
-}
-
-.products-group-title {
-    margin: 1rem auto;
-    font-family: 'bakeryregular', serif;
-    font-size: 1.5rem;
-    color: rgb(185, 60, 145);
+.section-p {
+    font-size: var(--text-font-size);
+    font-family: var(--text-font-family), sans-serif;
     text-align: center;
 }
 
-.products-group-p {
-    font-weight: 300;
-    font-size: 0.5rem;
-    padding: 0.5rem;
+.products-group-title {
+    font-family: var(--title-font-family), sans-serif;
+    font-size: var(--title-font-size);
+    color: var(--pink);
     text-align: center;
 }
 
 .products-group-img {
-    margin: 1rem auto;
-    border: solid 4px rgb(185, 60, 145);
+    border: solid 4px var(--pink);
     border-radius: 20px;
-    max-height: 40vh;
+    height: 500px;
 }
 
 #gelattiT {
-    color: rgb(61, 176, 149);
+    color: var(--green);
 }
 
 #gelattiI {
-    border: solid 4px rgb(61, 176, 149);
+    border: solid 4px var(--green);
 }
 
 #veganT {
-    color: rgb(243, 214, 53);
+    color: var(--yellow);
 }
 
 #veganI {
-    border: solid 4px rgb(243, 214, 53);
+    border: solid 4px var(--yellow);
 }
 
 /*________________________________________________________________________________________________________________
@@ -873,8 +873,9 @@ MEDIA QUERY
     }
 
     .products-group-img {
-        max-width: 40vw;
-        height: auto;
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
