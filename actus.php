@@ -19,9 +19,9 @@ require_once 'header.php';
     <h2 class="section-title" id="whatsup-title">What's up Ice Crime ?</h2>
     <div class="whatsup-blog-container">
         <div class="whatsup-container">
-        <div class="whatsup-img-container">
-            <img src="img/chien.jpg" alt="chien qui lèche une glace" class="whatsup-image">
-        </div>
+            <div class="whatsup-img-container">
+                <img src="img/chien.jpg" alt="chien qui lèche une glace" class="whatsup-image">
+            </div>
             <div class="whatsup-text-container">
                 <h3 class="whatsup-subtitle">News Title</h3>
                 <p class="whatsup-date">3/01/2021</p>

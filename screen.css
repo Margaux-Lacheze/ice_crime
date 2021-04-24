@@ -33,6 +33,7 @@ html {
 body {
     line-height: 1.625 ; /* 26/16 où 16px = taille police mainstream maquette et 26px hauteur de ligne maquette */
     margin : 0; /* par défaut le body a des margins */
+    padding: 0;
     font-family: 'Quicksand', sans-serif;
     color: #000000;
 }
@@ -86,6 +87,13 @@ HEADER__________________________________________________________________________
     width: 70%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-svg {
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
     justify-content: space-between;
 }
 
@@ -553,6 +561,8 @@ PANIER
 
 .shopping-card-container {
     width: 80vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -602,41 +612,40 @@ PANIER
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: var(--little-margin);
+    margin-right: var(--little-margin);
 }
 
 #newsletter-title {
-    font-size: 2.2rem;
-    padding-left: 70px;
-    color: rgb(185, 60, 145);
+    font-size: var(--title-font-size);
+    color: var(--pink);
     line-height: 1;
 }
 
-.form-newsletter {
-    margin-left: 70px;
-}
-
 .form-control {
-    height: 2rem;
+    height: 1.2rem;
     width: 52vw;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    font-family: var(--text-font-family), sans-serif;
+    font-size: var(--text-font-size);
     color: rgba(0, 0, 0, .45);
     text-align: center;
     padding: 2px 5px 2px;
     border: transparent;
     border-radius: 10px;
-    -webkit-box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.18), inset -3px -3px 4px rgba(0,0,0, 0.18);
-    -moz-box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.18), inset -3px -3px 4px rgba(0,0,0, 0.18);
-    box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.18), inset -3px -3px 4px rgba(0,0,0, 0.18);
+    -webkit-box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.10), inset -3px -3px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.10), inset -3px -3px 4px rgba(0,0,0, 0.10);
+    box-shadow: inset 3px 3px 4px 1.5px rgba(0,0,0, 0.10), inset -3px -3px 4px rgba(0,0,0, 0.10);
 }
 
 .button-newsletter {
     min-width: 160px;
     max-width: 25vw;
-    margin: 0;
-    height: 2rem;
-    background-color: rgba(185, 60, 145, 1);
+    height: 1.2rem;
+    background-color: var(--pink);
     transition: all .5s ease-in-out;
+    font-size: var(--text-font-size);
+    font-family: var(--text-font-family);
 }
 
 .button-newsletter:hover {
@@ -647,15 +656,29 @@ PANIER
     transform: scale(.9);
 }
 
+.whatsup-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.whatsup-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #whatsup-title {
-    font-size: 2.2rem;
-    color: rgb(61, 176, 149);
-    padding-bottom: 0;
+    font-size: var(--title-font-size);
+    color: var(--green);
+    margin-left: var(--little-margin);
     line-height: 1;
-    padding-left: 70px;
 }
 .whatsup-subtitle {
-    color: rgb(243, 214, 53);
+    color: var(--yellow);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -664,27 +687,19 @@ PANIER
     font-size: 0.4rem;
     line-height: 0.8;
     font-weight: 300;
-    padding-top: 0;
-    padding-bottom: 20px;
 }
 
-.whatsup-container{
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: 70px;
+.whatsup-img-container {
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.whatsup-img-container{
-    width: 25vw;
-    height: auto;
+    align-items: center;
 }
 
 .whatsup-img-container > img {
-    width: 800px;
+    width: 300px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .whatsup-text-container{
@@ -692,19 +707,20 @@ PANIER
 }
 
 .whatsup-p{
-    padding : 0;
+    text-align: justify;
+    margin-bottom: var(--big-margin);
 }
 
 
 /* NEWSLETTER ----------------------------------*/
 #news-title {
-    color: rgba(40,117,98,1);
+    color: var(--green);
 }
 
 .alert {
     min-width: 50vw;
     min-height: 2rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--text-font-size), sans-serif;
     margin: 1rem auto;
     text-align: center;
 }
@@ -742,8 +758,11 @@ PANIER
 CONTACT
 ----------------------------------------------------*/
 #horaires-title {
-    color: rgb(61, 176, 149);
+    font-size: var(--title-font-size);
+    color: var(--green);
     position: relative;
+    margin-top: 1rem;
+    margin-left: var(--little-margin);
 }
 
 .horaires {
@@ -767,16 +786,16 @@ CONTACT
 
 .status-open {
     background-color: rgba(61, 176, 149, 0.4);
-    color: rgb(61, 176, 149);
+    color: var(--green);
 }
 
 .status-closed {
     background-color: rgba(185, 60, 145, 0.15);
-    color: rgba(185, 60, 145, 1);
+    color: var(--pink);
 }
 
 .alert-p {
-    font-size: 1rem;
+    font-size: var(--text-font-size);
     margin-left: auto;
     margin-right: auto;
 }
@@ -784,6 +803,7 @@ CONTACT
 .horaires-container {
     margin-top: 1rem;
     order: 1;
+    font-size: var(--text-font-size);
 }
 
 .open-p {
@@ -799,11 +819,14 @@ CONTACT
 }
 
 #infos-title {
-    color: rgb(185, 60, 145);
+    font-size: var(--title-font-size);
+    color: var(--pink);
     padding-bottom: 0;
+    margin-left: var(--little-margin);
 }
 
 .infos-container {
+    font-size: var(--text-font-size);
     border: solid 1px rgb(243, 214, 53);
     border-radius: 15px;
     padding: 15px 15px;
@@ -814,11 +837,18 @@ CONTACT
 }
 
 #contact-title {
-    color: rgb(61, 176, 149);
+    color: var(--green);
     padding-bottom: 0;
+    font-size: var(--title-font-size);
+    margin-left: var(--little-margin);
+}
+
+.contact-section {
+    margin-top: 2rem;
 }
 
 .contact-form-container {
+    font-size: var(--text-font-size);
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -841,6 +871,7 @@ CONTACT
 
 .button-contact {
     margin-top: 20px;
+    font-size: var(--text-font-size);
 }
 
 /* _-----------------------------------------------
@@ -945,6 +976,12 @@ MEDIA QUERY
         margin-left: auto;
         margin-right: auto;
     }
+
+    .whatsup-image {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -954,7 +991,37 @@ MEDIA QUERY
 
     .explications{
         margin: var(--big-margin);
-    }    
+    }
+
+    .whatsup-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .whatsup-text-container {
+        padding-right: var(--little-margin);
+    }
+
+    .whatsup-img-container {
+        padding-left: var(--little-margin);
+        padding-top: 17px;
+        max-width: 30vw;
+    }
+
+    #horaires-title {
+        margin-left: var(--big-margin);
+    }
+
+    #infos-title {
+        margin-left: var(--big-margin);
+    }
+
+    #contact-title {
+        margin-left: var(--big-margin);
+    }
 }
 
 @media only screen and (min-width: 1000px){
@@ -995,8 +1062,8 @@ MEDIA QUERY
 
     .whatsup-section {
         background:
-        top 50px right 0px url(img/arcsideee.png) no-repeat,
-        bottom 0px right 0px url(img/lait\ 1.svg) no-repeat;
+        top 50px right -10px url(img/arcsideee.png) no-repeat;
         background-size: 350px;
+        overflow: hidden;
     }
 }

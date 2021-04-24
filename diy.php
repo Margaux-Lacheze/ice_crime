@@ -88,6 +88,10 @@ require_once 'header.php';
                 <input type="checkbox" name="coulisframboise" id="coulisframboise">
                 <label for="coulisframboise"> Coulis à la framboise</label>
             </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="griottes" id="griottes">
+                <label for="griottes"> Griottes amaretto</label>
+            </div>
         </div>
     <hr class="hr-separator">
     <div class="etape etape-3">

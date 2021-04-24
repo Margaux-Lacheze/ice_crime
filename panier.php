@@ -55,7 +55,8 @@ $prixSupplements = [
     'vermicelle' => 0.5,
     'fruits' => 2,
     'coulischocolat' => 1.5,
-    'coulisframboise' => 1.5
+    'coulisframboise' => 1.5,
+    'griottes' => 2
 ];
 
 $array_supplements = [];
@@ -88,6 +89,10 @@ if(isset($_POST['coulischocolat'])){
 if(isset($_POST['coulisframboise'])){
     $totalSupplements += $prixSupplements['coulisframboise'];
     $array_supplements[] = 'Coulis à la framboise';
+};
+if(isset($_POST['griottes'])){
+    $totalSupplements += $prixSupplements['griottes'];
+    $array_supplements[] = 'Griottes amaretto';
 };
 
 $contenant_policed = "";
